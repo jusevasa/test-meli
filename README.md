@@ -1,34 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Prueba MELI
 
-## Getting Started
+Bienvenidos a mi prueba, la verdad he disfrutado mucho realizando esta prueba. Desde mi perspectiva se pudieron mejorar bastantes cosas sin embargo, me enfoque mucho en el entregable y los criterios de aceptación.
 
-First, run the development server:
+Para resolver esta prueba hice uso de las siguientes herramientas:
+
+- Nextjs (Framework de react)
+- Tailwind (Framework CSS)
+- Axios (Fetching)
+
+Comprendo que se mencionaba el uso de sass, sin embargo por temas de tiempo vi como opcion el uso de tailwind.
+## Ejecutar la aplicación 
+
+Para poder correr la aplicación es necesario instalar depencias
 
 ```bash
-npm run dev
-# or
+yarn install
+#or
+yarn
+```
+
+Despues se debe ejecutar el entorno local de desarrollo con el siguiente comando:
+```bash
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Para la ejecucion de pruebas:
+```bash
+yarn test
+```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Para la ejecucion de pruebas automatizadas:
+```bash
+yarn cypress
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## ¿Comó desarrolle la prueba?
+Lo primero fue visualizar cada una de las vistas, ver que componentes iba a reutilizar y donde realizar el fetching.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Asi que empece con el desarrollo, separando vistas de componentes dejando solo una responsabilidad para las vistas, las cuales son encargadas de realizar el fetching desde el servidor.
 
-## Learn More
+realice un scheme folding por si llegaba a necesitar ciertas cosas, sin embargo, no fue necesario, no complejice tanto la aplicación.
 
-To learn more about Next.js, take a look at the following resources:
+adicionalmente, he realizado algunos test basicos para comprobar los flujos completos de la aplicacion.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Tambien separe los resvicios, hubiese estado genial poder realizar una arquitectura mas robusta para asegurar la logica de negocio.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## ¿Puntos de mejora?
+Hubo muchas cosas que me hubiese gustado implementar y mejorear, por ejemplo el tema de los servicios hubiese sido interesante implementar SWR para el manejo de cache para no saturar tanto la API. Mejorar y implementar un mejor adaptador para los servicios.
 
-## Deploy on Vercel
+Realizar unos test mas robustos, por tema de tiempo hubiera podido realizar mas test unitarios y de integracion. Hubiese sido interesante poder correr analizis de codigo estatico.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
