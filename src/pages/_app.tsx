@@ -1,7 +1,7 @@
-import type { AppProps } from 'next/app';
-import 'styles/globals.css';
+import type { AppProps } from "next/app";
+import "styles/globals.css";
 
-import { Nav } from 'components/Nav';
+import { Nav } from "components/Nav";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (

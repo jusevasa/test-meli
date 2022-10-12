@@ -11,13 +11,13 @@ export class ItemDataSource extends HttpClient {
     super(`${ENVIRONMENTS.API}`);
   }
 
-  public getItem = (id: string): Promise<ItemDetail[] | ErrorItem> =>
+  public get = (id: string): Promise<ItemDetail[] | ErrorItem> =>
     this.instance
       .get(`${this._url}${id}`)
       .then((data) => data)
       .catch((error) => error.response.data);
 
-  public getItemDescription = (
+  public getDescription = (
     id: string
   ): Promise<ItemDescription[] | ErrorItem> =>
     this.instance
