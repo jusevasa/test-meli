@@ -28,6 +28,10 @@ Para la ejecucion de pruebas:
 ```bash
 yarn test
 ```
+Ver coverage de la aplicación
+```bash
+yarn test:coverage
+```
 
 Para la ejecucion de pruebas automatizadas:
 ```bash
@@ -43,12 +47,11 @@ realice un scheme folding por si llegaba a necesitar ciertas cosas, sin embargo,
 
 adicionalmente, he realizado algunos test basicos para comprobar los flujos completos de la aplicacion.
 
-Tambien separe los resvicios, hubiese estado genial poder realizar una arquitectura mas robusta para asegurar la logica de negocio.
 
 ## ¿Puntos de mejora?
 Hubo muchas cosas que me hubiese gustado implementar y mejorear, por ejemplo el tema de los servicios hubiese sido interesante implementar SWR para el manejo de cache para no saturar tanto la API. Mejorar y implementar un mejor adaptador para los servicios.
 
-Realizar unos test mas robustos, por tema de tiempo hubiera podido realizar mas test unitarios y de integracion. Hubiese sido interesante poder correr analizis de codigo estatico.
+Hubiese sido interesante poder correr analizis de codigo estatico con sonarQube.
 
 
 
